@@ -151,6 +151,7 @@ html {
         display: grid;   
       }
 
+        /*HOME PAGE*/
         #portfolio {
           display: grid;
           grid-template-columns: 1fr 1fr 1fr 1fr;
@@ -185,6 +186,27 @@ html {
                 position: absolute;
                 filter: drop-shadow(4px 4px 5px rgba(0, 0, 0, 0.4));
             }
+
+          /*VIDEO PAGE & LICENSING PAGE*/
+            .video, .licensing {
+              margin-bottom: 5em;
+            }
+              .video iframe {
+                width: 56em;
+                height: 31.5em;
+              }
+
+              .licensing iframe {
+                width: 70em;
+                height: 31.5em;
+              }
+
+
+         
+
+          /*RECORDS PAGE*/
+
+          /*CONTACT PAGE*/
 
       footer {
         grid-column: 2 / 3;
