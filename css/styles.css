@@ -259,6 +259,31 @@ html {
          
 
           /*RECORDS PAGE*/
+              .records {
+                display: grid;
+                grid-template-columns: 1fr 2fr;
+                align-items: flex-start;
+                justify-content: center;
+                gap: 1.3em;
+              }
+              .records iframe {
+                border: 0; 
+                width: 16em; 
+                height: 16em;
+              }
+              
+              .records h2 {
+                font-family: 'Montserrat';
+                font-size: 1em;
+                font-weight: 700;
+                margin-bottom: 0.5em;
+              }
+              .records p {
+                font-family: 'Montserrat';
+                font-size: 0.8em;
+                padding-top: 0.8em;
+              }
+              
 
           /*CONTACT PAGE*/
             
