@@ -207,6 +207,11 @@ html {
               justify-content: center;
               flex-direction: column;
             }
+            .hidden h2, .hidden p {
+              color: #E8E8E8;
+              margin-left: 1em;
+            }
+            
 
       footer {
         grid-column: 2 / 3;
