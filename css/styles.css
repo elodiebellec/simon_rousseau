@@ -178,15 +178,49 @@ html {
               justify-self: center;
           }
 
+            .hidden {
+              position: relative;
+              width: 16em;
+              height: 16em;
+              align-self: center;
+              justify-self: center;
+              z-index: 3;
+              opacity: 0;
+            }
+
+            .albumTitle{
+              position: absolute;
+              top: 9.5em;
+              height: 4.5em;
+              width: 16em;
+              background-color: rgba(0, 0, 0, 0.4);
+              display: flex;
+              justify-content: center;
+              flex-direction: column;
+            }
+            .albumTitle h2, .albumTitle p {
+              color: #E8E8E8;
+              margin-left: 1em;
+            }
+
+        
             .colorFilter {
                 width: 16em;
                 height: 16em;
-                background-color: #F3C41C;
-                opacity: 0.2;
+                background-color: rgb(243,196,28, 0.2);
                 z-index: 2;
                 position: absolute;
-
             }
+
+            .hidden:hover {
+               opacity: 1;
+            }
+
+            .colorFilter:hover {
+              background-color: rgb(243,196,28, 0);
+           }
+
+            
 
             .illustration {
                 cursor: pointer;
@@ -197,21 +231,7 @@ html {
                 filter: drop-shadow(4px 4px 5px rgba(0, 0, 0, 0.4));
             }
 
-              .hidden {
-                position: absolute;
-                top: 9.5em;
-                height: 4.5em;
-                width: 16em;
-                z-index: 3;
-                background-color: rgba(0, 0, 0, 0.4);
-                display: flex;
-                justify-content: center;
-                flex-direction: column;
-              }
-              .hidden h2, .hidden p {
-                color: #E8E8E8;
-                margin-left: 1em;
-              }
+              
 
           /*VIDEO PAGE & LICENSING PAGE*/
             .video, .licensing {
