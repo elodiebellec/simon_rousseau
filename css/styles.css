@@ -107,6 +107,16 @@ html {
             font-size: 1.3em;
         }
 
+        #portfolio h2 {
+          font-family: 'Montserrat';
+          font-size: 1.3em;
+          font-weight: 700;
+          padding-bottom: 0.3em;
+        }
+        #portfolio p {
+          font-family: 'Montserrat';
+          font-size: 1.125em;
+        }
 
           /*animation on navigation bar links*/      
           .hvr-underline-from-left {
@@ -187,6 +197,22 @@ html {
                 filter: drop-shadow(4px 4px 5px rgba(0, 0, 0, 0.4));
             }
 
+              .hidden {
+                position: absolute;
+                top: 9.5em;
+                height: 4.5em;
+                width: 16em;
+                z-index: 3;
+                background-color: rgba(0, 0, 0, 0.4);
+                display: flex;
+                justify-content: center;
+                flex-direction: column;
+              }
+              .hidden h2, .hidden p {
+                color: #E8E8E8;
+                margin-left: 1em;
+              }
+
           /*VIDEO PAGE & LICENSING PAGE*/
             .video, .licensing {
               margin-bottom: 5em;
@@ -207,6 +233,8 @@ html {
           /*RECORDS PAGE*/
 
           /*CONTACT PAGE*/
+            
+            
 
       footer {
         grid-column: 2 / 3;
@@ -244,6 +272,14 @@ html {
               font-family:'Montserrat', 'Open Sans', sans-serif;
               font-size: 0.8em;
           }
+
+          .bandcamp {
+            opacity: 0.8;
+          }
+
+
+
+
 
 
 
