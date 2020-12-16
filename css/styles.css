@@ -70,13 +70,22 @@ html {
     unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
   }
 
+  @font-face {
+    font-family: 'Julius Sans One';
+    font-style: normal;
+    font-weight: 400;
+    font-display: swap;
+    src: url(https://fonts.gstatic.com/s/juliussansone/v9/1Pt2g8TAX_SGgBGUi0tGOYEga5WOwnsX.woff2) format('woff2');
+    unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
+  }
+
   body {
     color: #333;
   }
 
     .wrapper  {
       display: grid;
-      grid-template-rows: 8em auto 20em;
+      grid-template-rows: 4em 8em auto 20em;
       grid-template-columns: auto 59.9em auto;
       margin: 1em;
     }
@@ -98,7 +107,7 @@ html {
 
         nav li {
             display: flex;
-            margin-left: 4%;
+            margin-left: 7%;
             
         }
 
@@ -106,7 +115,7 @@ html {
             text-decoration: none;
             color: #333;
             font-family:'Major Mono Display', 'Open Sans', sans-serif;
-            font-size: 1.3em;
+            font-size: 1.8em;
             padding-bottom: 5px;
         }
 
@@ -146,20 +155,31 @@ html {
           }
           /*end of animation*/  
 
-      /* div class to standardize grid template on all pages */
-      .content {
+      .pageTitle {
         grid-row: 2 / 3;
         grid-column: 2 / 3;
-        display: grid;   
+        font-family: 'Major Mono Display';
+        font-size: 4em;
+      }
+
+
+      /* div class to standardize grid template on all pages */
+      .content {
+        grid-row: 3 / 4;
+        grid-column: 2 / 3;
+        display: grid;
       }
 
         /*HOME PAGE*/
         #portfolio {
           display: grid;
+          grid-row: 2 / 4;
+          grid-column: 2 / 3;
           grid-template-columns: 1fr 1fr 1fr 1fr;
           align-items: start;
           justify-content: center;
           gap: 1.3em;
+          margin-top: 3em;
         }
 
           
@@ -232,15 +252,15 @@ html {
         
             .hidden:hover {
                opacity: 1;
+               transition-duration: 0.5s;
             }
 
             .colorFilter:hover {
               background-color: rgb(243,196,28, 0);
+              transition-duration: 0.5s;
            }
 
-            
-
-           
+                 
               
 
           /*VIDEO PAGE & LICENSING PAGE*/
@@ -250,6 +270,7 @@ html {
               .video iframe {
                 width: 44em;
                 height: 25em;
+                border-radius: 0.3em;
               }
 
               .licensing iframe {
@@ -262,16 +283,16 @@ html {
 
           /*RECORDS PAGE*/
               .records {
-                display: grid;
                 grid-template-columns: 1fr 2fr;
-                align-items: flex-start;
-                justify-content: center;
                 gap: 1.3em;
               }
+
+              
               .records iframe {
                 border: 0; 
                 width: 16em; 
                 height: 16em;
+                border-radius: 0.3em;
               }
               
               .records h2 {
@@ -293,7 +314,7 @@ html {
 
       footer {
         grid-column: 2 / 3;
-        grid-row: 3 / 4;          
+        grid-row: 4 / 5;          
       }
 
         #footer {
@@ -306,7 +327,7 @@ html {
 
           #name p{
               font-family:'Major Mono Display', 'Open Sans', sans-serif;
-              font-size: 1em;
+              font-size: 1.8em;
               text-align: center;
               margin-bottom: 1em;
           }
@@ -328,11 +349,10 @@ html {
               font-size: 0.7em;
           }
 
-          .bandcamp {
-            opacity: 0.8;
+          .icon {
+            border-radius: 0.5em;
           }
-
-
+      
 
 
 
