@@ -182,6 +182,7 @@ html {
               height: 14em;
               align-self: center;
               justify-self: center;
+             
           }
 
           .illustration {
@@ -191,6 +192,7 @@ html {
             z-index: 1;
             position: absolute;
             filter: drop-shadow(4px 4px 5px rgba(0, 0, 0, 0.4));
+            border-radius: 0.3em;
         }
 
 
