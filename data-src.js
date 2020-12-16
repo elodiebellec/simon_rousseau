@@ -5,3 +5,4 @@
       vidDefer[i].setAttribute('src',vidDefer[i].getAttribute('data-src'));
       } } }
       window.onload = init;
+/*Fonction to defer videos and have a faster page loading.*/ 

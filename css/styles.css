@@ -205,6 +205,29 @@ html {
              
           }
 
+          .valpo {
+            display: grid;
+            width: 60em;
+              height: 30em;
+              grid-column: 1 / 5;
+              grid-template-columns: 1fr 1fr;
+          }
+
+          .valpo .illustration, .valpo .colorFilter {
+            width: 30em;
+            height: 30em;
+            background-color: rgb(243,196,28, 0);
+
+          }
+
+          .albumCover {
+            grid-column: 1/2;
+          }
+          .albumDescription {
+            grid-column: 2/3;
+          
+          }
+
           .illustration {
             cursor: pointer;
             width: 14em;
