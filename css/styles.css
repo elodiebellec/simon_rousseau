@@ -349,22 +349,22 @@ html {
         }
         .formulaire {
           background-color: rgba(238, 238, 234, 0.3);
-          border: 1px solid #000810;
-          border-radius: 10px;
-          width: 50em;
+          border: 1px solid rgba(0, 8, 16, 0.3);
+          border-radius: 0.6em;
+          width: 60em;
           height: 40em;
           text-align: center;
           margin-top: 1em;
         }
         .formulaire-input {
-          width: 40em;
+          width: 50em;
           font-family: 'Montserrat';
           margin-top: 3em;
           height: 2.5em;
+          border: 1px solid rgba(0, 8, 16, 0.3);
+          border-radius: 0.2em;
         }
         .formulaire-input:first-child {
-          width: 40em;
-          font-family: 'Montserrat';
           margin-top: 5em;
         }
         
