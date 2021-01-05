@@ -327,12 +327,21 @@ html {
                 font-size: 1em;
                 font-weight: 700;
                 margin-bottom: 0.5em;
+                margin-top: 2em;
+              }
+              h2.first-h2 {
+                margin-top: 0;
               }
               .records p {
                 font-size: 0.8em;
                 padding-top: 0.8em;
               }
-              
+              .record-titles {
+                padding-top: 3em;
+              }
+              .first-titles {
+                padding-top: 1em;
+              }
 
           /*CONTACT PAGE*/
             
