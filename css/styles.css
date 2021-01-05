@@ -386,6 +386,8 @@ html {
           color: #FFFEFA;
           font-family: 'Montserrat';
           margin-top: 2em;
+          float: right;
+          margin-right: 11em;
         }
       footer {
         grid-column: 2 / 3;
