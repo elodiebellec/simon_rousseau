@@ -90,6 +90,12 @@ html {
       margin: 1em;
       font-family: 'Montserrat', 'Open Sans', sans-serif;
     }
+    @media screen and (max-width: 768px) {
+      .wrapper  {
+        grid-template-rows: 4em 8em auto 10em;
+        grid-template-columns: auto 40em auto;
+      }
+    }
 
     body p {
       font-size: 0.8em;
@@ -101,6 +107,19 @@ html {
       font-size: 1em;
       line-height: 1.4em;
       font-weight: 700;
+    }
+
+    /* Mobile */  
+    @media only screen and (max-width: 480px) {
+      body p {
+        font-size: 1.2em;
+        padding-top: 0.8em;
+        line-height: 1.4em;
+      }
+      body h2 {
+        font-size: 1.4em;
+        line-height: 1.6em;
+      }
     }
 
       header {
@@ -128,6 +147,12 @@ html {
             font-family:'Major Mono Display', 'Open Sans', sans-serif;
             font-size: 1.8em;
             padding-bottom: 5px;
+        }
+        @media screen and (max-width: 768px) {
+          nav a {
+            font-size: 1em;
+            padding-bottom: 5px;
+        }
         }
 
           /*animation on navigation bar links*/      
@@ -327,7 +352,6 @@ html {
                 grid-template-columns: 1fr 2fr;
                 gap: 1.3em;
               }
-
               
               .records iframe {
                 border: 0; 
@@ -350,6 +374,25 @@ html {
               .first-titles {
                 padding-top: 1em;
               }
+
+              /* Tablet */ 
+            @media screen and (max-width: 768px) {
+              .records {
+                gap: 1.4em;
+              }
+              .records iframe {
+                width: 20em; 
+                height: 20em;
+              }
+            } 
+
+              /* Mobile */ 
+            @media screen and (max-width: 480px) {
+              .records {
+                display: inline-block;
+              }
+              
+            } 
 
           /*CONTACT PAGE*/
             
@@ -397,6 +440,9 @@ html {
           float: right;
           margin-right: 11em;
         }
+
+      /* FOOTER */  
+
       footer {
         grid-column: 2 / 3;
         grid-row: 4 / 5;          
@@ -406,7 +452,7 @@ html {
           display: flex;
           flex-direction: column;
           align-items: center;
-          padding-top: 20%;
+          padding-top: 15%;
           vertical-align: bottom;
         }
 
@@ -438,8 +484,24 @@ html {
             border-radius: 0.5em;
           }
       
+          @media screen and (max-width: 768px) {
+            #name p{
+              font-size: 1.2em;
+            }
+            #name {
+              width: 60%
+            }
+            #socialMedia a, #socialMedia iframe {
+              margin: 1em 2em 0 2em;
+            }
+          }
 
-
+          @media screen and (max-width: 480px) {
+            #name p{
+              font-size: 1em;
+            }
+            
+          } 
 
 
 
