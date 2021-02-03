@@ -6,3 +6,5 @@
       } } }
       window.onload = init;
 /*Fonction to defer videos and have a faster page loading.*/ 
+
+
