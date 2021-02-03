@@ -93,6 +93,12 @@ html {
     @media screen and (max-width: 768px) {
       .wrapper  {
         grid-template-rows: 4em 8em auto 10em;
+        grid-template-columns: auto 45em auto;
+      }
+    } 
+    @media screen and (max-width: 480px) {
+      .wrapper  {
+        grid-template-rows: 4em 8em auto 10em;
         grid-template-columns: auto 40em auto;
       }
     }
@@ -112,7 +118,7 @@ html {
     /* Mobile */  
     @media only screen and (max-width: 480px) {
       body p {
-        font-size: 1.2em;
+        font-size: 1.1em;
         padding-top: 0.8em;
         line-height: 1.4em;
       }
@@ -126,34 +132,82 @@ html {
         grid-column: 2 / 3;
         grid-row: 1 / 2;    
       }
-
-
-        nav ul {
-            list-style-type: none;
-            display: flex;
-            justify-content: flex-end;
-            margin-top: 2%;
-        }
-
-        nav li {
-            display: flex;
-            margin-left: 7%;
-            
-        }
-
-        nav a {
-            text-decoration: none;
+      
+      /* Mobile menu */
+      .menu {
+        list-style-type: none;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+        align-items: center;
+        
+      }
+      .menu li a {
+        text-decoration: none;
             color: #333;
             font-family:'Major Mono Display', 'Open Sans', sans-serif;
             font-size: 1.8em;
-            padding-bottom: 5px;
+        display: block;
+        padding: 25px 5px;
+        background: #FFF;
+        z-index: 10;
+      }
+      .currentPage {
+        background: #FFF;
+        border-bottom: none;
+      }
+     
+      .logo {
+        font-size: 1.8em;
+        font-family:'Major Mono Display', 'Open Sans', sans-serif;
+      }
+      .toggle {
+        font-size: 1.3em;
+        text-align: right;
+      }
+      
+      .item {
+        width: 100%;
+        text-align: center;
+        display: none;
+      }
+      .active .item {
+        display: block;
+      }
+      
+      /* Tablet menu */
+      @media all and (min-width: 768px) {
+        .logo {
+          flex: 1;
         }
-        @media screen and (max-width: 768px) {
-          nav a {
-            font-size: 1em;
-            padding-bottom: 5px;
+        .toggle {
+          flex: 1;
+          text-align: right;
+          order: 2;
         }
+      }
+      /* Desktop menu */
+      @media all and (min-width: 960px) {
+        .menu {
+          justify-content: center;
+          flex-wrap: nowrap;
         }
+        .logo {
+          display: none;
+        }
+        .item {
+          order: 1;
+          position: relative;
+          display: block;
+          width: auto;
+          margin-left: 5%;
+        }
+        
+        .toggle {
+          display: none;
+        }
+       
+      }
 
           /*animation on navigation bar links*/      
           .hvr-underline-from-left {
@@ -326,7 +380,62 @@ html {
               transition-duration: 0.5s;
            }
 
-                 
+            /* Tablet */ 
+           @media screen and (max-width: 768px) {
+            #portfolio {
+              gap: 1em;
+            }
+            .imgContainer, .illustration, .colorFilter, .hidden {
+              height: 10em;
+              width: 10em;
+            }
+            .albumTitle{
+              
+              width: 10em;
+             
+            }
+            .valpo {
+              height: 20em;
+              width: 40em;
+            }
+          .valpo .illustration, .valpo .colorFilter, .albumDescription {
+              height: 20em;
+              width: 20em;
+            }
+            .valpo.imgContainer  {
+              justify-self: flex-start;
+            }
+            .albumDescription {
+              display: flex;
+              justify-self: flex-end;
+            }
+          }
+
+             /* Mobile */  
+    @media only screen and (max-width: 480px) {
+      #portfolio {
+        display: block;
+        margin: 0 auto;
+        margin-top: 3em;
+      }
+
+      .imgContainer, .illustration, .colorFilter, .valpo, .valpo .illustration, .valpo .colorFilter {
+        height: 35em;
+        width: 35em;
+      }
+        .imgContainer, .illustration {
+            margin-bottom: 2em;
+        }
+        
+      .albumTitle{
+        position: relative;
+        width: 20em;
+      }
+      .valpo {
+        display: block;
+      }
+     
+    }    
               
 
           /*VIDEO PAGE & LICENSING PAGE*/
@@ -498,9 +607,17 @@ html {
 
           @media screen and (max-width: 480px) {
             #name p{
-              font-size: 1em;
+              font-size: 1.3em;
             }
-            
+            #socialMedia a, #socialMedia iframe {
+              margin: 1.5em;
+            }
+            .icon {
+              width: 4.5em;
+            }
+            #brand{
+              margin-bottom: 0.7em;
+          }
           } 
 
 
