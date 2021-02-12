@@ -320,7 +320,7 @@
              
           }
 
-          .valpo {
+          .feature {
             display: grid;
             width: 60em;
               height: 30em;
@@ -328,7 +328,7 @@
               grid-template-columns: 1fr 1fr;
           }
 
-          .valpo .illustration, .valpo .colorFilter {
+          .feature .illustration, .feature .colorFilter {
             width: 30em;
             height: 30em;
             background-color: rgb(243,196,28, 0);

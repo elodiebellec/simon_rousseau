@@ -28,7 +28,7 @@
 
       <div id="portfolio">
 
-        <figure class="imgContainer valpo">
+        <figure class="imgContainer feature" data-cell-id="1" style="display: none;">
           <div class="albumCover"> 
           <div class="colorFilter">
             <div class="hidden">
@@ -55,8 +55,31 @@
           </div>
         </figure>
 
+        <figure class="imgContainer feature" data-cell-id="2" style="display: none;">
+          <div class="albumCover"> 
+          <div class="colorFilter">
+            <div class="hidden">
+              <div class="albumTitle">
+                <h2>Tout va bien</h2> 
+                <p>Court Métrage</p>
+              </div>
+            </div>
+          </div>
+          <img class="illustration biggerImage" src="media/images/toutvabien.jpg" alt="valpo"/>
+        </div>
+          <div class="albumDescription">
+            <div>
+            <h2>Tout va bien</h2>
+            <h2>Court Métrage</h2>
+          </div>
+            <p>Bla bla bla<br/>
+              Lorem Ipsum<br/>
+              XYX
+            </p>
+          </div>
+        </figure>
 
-        <figure class="imgContainer">
+        <figure class="imgContainer cell" data-cell-id="1" onclick="javascript:showFeature(1)">
           <div class="colorFilter">
             <div class="hidden">
               <div class="albumTitle">
@@ -71,7 +94,7 @@
           />
         </figure>
 
-        <figure class="imgContainer">
+        <figure class="imgContainer cell" data-cell-id="2" onclick="javascript:showFeature(2)">
           <div class="colorFilter">
             <div class="hidden">
               <div class="albumTitle">
