@@ -7,6 +7,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" type="text/css" href="./css/styles.css" />
     <link rel="stylesheet" type="text/css" href="./css/reset.css" />
+    <!-- Qu'est-ce que c'est???? -->
     <script src="https://use.fontawesome.com/9272d783f7.js"></script>
   </head>
 
@@ -21,79 +22,72 @@
             <li class="item"><a href="licensingPage.html" class="hvr-underline-from-left">licensinG</a></li>
             <li class="item"><a href="recordsPage.html" class="hvr-underline-from-left">records</a></li>
             <li class="item"><a href="contactPage.html" class="hvr-underline-from-left">contAct</a></li>
+            <!--Hamberger menu -->
             <li class="toggle"><a href="#"><i class="fa fa-bars"></i></a></li>
           </ul>
         </nav>
       </header>
 
-      <div id="portfolio">
+      <div id="portfolio">        
 
+      <!-- Nouvel album Valpo -->
+        <!-- Large version on click -->
         <figure class="imgContainer feature" data-cell-id="1" style="display: none;">
+          <!-- left size for the large version on click -->
           <div class="albumCover"> 
-          <div class="colorFilter">
-            <div class="hidden">
-              <div class="albumTitle">
-                <h2>Valpo</h2> 
-                <p>Composition</p>
-              </div>
-            </div>
+            <img class="illustration biggerImage" src="media/images/valpo.jpg" alt="valpo"/>
           </div>
-          <img class="illustration biggerImage" src="media/images/valpo.jpg" alt="valpo"/>
-        </div>
+          <!-- right size for the large version on click -->
           <div class="albumDescription">
             <div>
-            <h2>Valpo</h2>
-            <h2>Nouvel album</h2>
-          </div>
+              <h2>Valpo</h2>
+              <h2>Nouvel album</h2>
+            </div>
             <p>Production & mixage: Simon Rousseau<br/>
               Mastering: Ronan Cloarec<br/>
-              Photographie & design: Guillaume Amat</p>
-              <div>
+              Photographie & design: Guillaume Amat
+            </p>
+            <div>
               <p>Released March 6, 2020</p>
               <p class="italic"><a>Ecouter l’album</a></p>
             </div>
           </div>
         </figure>
-
+        <!-- Small version with no click-->
+        <figure class="imgContainer cell" data-cell-id="1" onclick="javascript:showFeature(1)">         
+           <div class="albumCover"> 
+             <div class="colorFilter">
+               <div class="hidden">
+                 <div class="albumTitle">
+                   <h2>Valpo</h2> 
+                   <p>Composition</p>
+                 </div>
+               </div>
+             </div>
+             <img class="illustration biggerImage" src="media/images/valpo.jpg" alt="valpo"/>
+           </div>
+          </figure>
+          
+      <!-- Film "#Tout va bien" -->
+        <!-- Large version on click -->
         <figure class="imgContainer feature" data-cell-id="2" style="display: none;">
+          <!-- left size for the large version on click -->
           <div class="albumCover"> 
-          <div class="colorFilter">
-            <div class="hidden">
-              <div class="albumTitle">
-                <h2>Tout va bien</h2> 
-                <p>Court Métrage</p>
-              </div>
-            </div>
-          </div>
-          <img class="illustration biggerImage" src="media/images/toutvabien.jpg" alt="valpo"/>
-        </div>
+            <img class="illustration biggerImage" src="media/images/toutvabien.jpg" alt="#ToutVaBien"/>
+         </div>
+         <!-- right size for the large version on click -->
           <div class="albumDescription">
             <div>
-            <h2>Tout va bien</h2>
-            <h2>Court Métrage</h2>
-          </div>
+              <h2>Tout va bien</h2>
+              <h2>Court Métrage</h2>
+            </div>
             <p>Bla bla bla<br/>
               Lorem Ipsum<br/>
               XYX
             </p>
           </div>
         </figure>
-
-        <figure class="imgContainer cell" data-cell-id="1" onclick="javascript:showFeature(1)">
-          <div class="colorFilter">
-            <div class="hidden">
-              <div class="albumTitle">
-                <h2>La Profondeur des Roches</h2> 
-                <p>Composition</p>
-              </div>
-            </div>
-          </div>
-          <img class="illustration" 
-          src="media/images/roches.jpg" 
-          alt="roches"
-          />
-        </figure>
-
+        <!-- Small version with no click-->
         <figure class="imgContainer cell" data-cell-id="2" onclick="javascript:showFeature(2)">
           <div class="colorFilter">
             <div class="hidden">
@@ -108,6 +102,42 @@
           alt="toutvabien"
           />
         </figure>
+
+      <!-- Film "La Profondeur des Roches" -->
+        <!-- Large version on click -->
+        <figure class="imgContainer feature" data-cell-id="3" style="display: none;">
+          <!-- left size for the large version on click -->
+          <div class="albumCover"> 
+            <img class="illustration biggerImage" src="media/images/roches.jpg" alt="roches"/>
+         </div>
+         <!-- right size for the large version on click -->
+          <div class="albumDescription">
+            <div>
+              <h2>La Profondeur des Roches</h2> 
+              <h2>Exposition photos</h2>
+            </div>
+            <p>Bla bla bla<br/>
+              Lorem Ipsum<br/>
+              XYX
+            </p>
+          </div>
+        </figure>
+        <!-- Small version with no click-->
+        <figure class="imgContainer cell" data-cell-id="3" onclick="javascript:showFeature(3)">
+          <div class="colorFilter">
+            <div class="hidden">
+              <div class="albumTitle">
+                <h2>La Profondeur des Roches</h2> 
+                <p>Exposition photos</p>
+              </div>
+            </div>
+          </div>
+          <img class="illustration" src="media/images/roches.jpg" alt="roches"/>
+        </figure>
+
+
+
+        
 
         <figure class="imgContainer">
           <div class="colorFilter">
